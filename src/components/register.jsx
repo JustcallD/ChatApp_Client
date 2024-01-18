@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const Login = () => {
+const Register = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
@@ -95,4 +95,4 @@ const buttonStyle = {
   cursor: "pointer",
 };
 
-export default Login;
+export default Register;
