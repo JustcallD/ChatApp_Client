@@ -1,0 +1,59 @@
+.message-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 300px;
+  position: relative;
+  border-radius: 10px;
+  background-color: #f7f7f7; /* Add a background color */
+}
+
+.message {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  word-wrap: break-word;
+}
+
+.sent,
+.received {
+  margin: 5px;
+  max-width: 70%; /* Adjust the maximum width */
+  position: relative;
+}
+
+.sent {
+  align-self: flex-end;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.received {
+  align-self: flex-start;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.sent::before,
+.received::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  transform: translateY(-50%);
+}
+
+.sent::before {
+  left: -10px;
+  border-width: 8px 0 8px 10px;
+  border-color: transparent transparent transparent #007bff;
+}
+
+.received::before {
+  right: -10px;
+  border-width: 8px 10px 8px 0;
+  border-color: transparent #f0f0f0 transparent transparent;
+}
