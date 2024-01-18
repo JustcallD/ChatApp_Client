@@ -57,7 +57,7 @@ const ChatList = () => {
     const fetchConversations = async () => {
       try {
         const response = await axios.get(
-          `${import.meta.env.VITE_SERVER_URL}/connections/${id}`
+          `https://chatappbackendservice-w8ct.onrender.com/connections/${id}`
         );
         localStorage.setItem("userList", response.data.connections);
         setConversations(response.data.connections);

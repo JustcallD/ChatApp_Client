@@ -52,7 +52,7 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post(`${import.meta.env.VITE_SERVER_URL}/login`, {
+      const response = await axios.post(`https://chatappbackendservice-w8ct.onrender.com/login`, {
         email,
       });
 

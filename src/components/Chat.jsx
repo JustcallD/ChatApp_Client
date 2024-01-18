@@ -208,7 +208,7 @@ const Chat = () => {
     const fetchConversations = async () => {
       try {
         const response = await axios.get(
-          `${import.meta.env.VITE_SERVER_URL}/getMessages`,
+          `https://chatappbackendservice-w8ct.onrender.com/getMessages`,
           {
             params: { participants },
           }
@@ -231,7 +231,7 @@ const Chat = () => {
       text: message,
     };
 
-    axios.post(`${import.meta.env.VITE_SERVER_URL}/addMessages`, {
+    axios.post(`https://chatappbackendservice-w8ct.onrender.com/addMessages`, {
       participants: [sender, receiver],
       text: message,
     });

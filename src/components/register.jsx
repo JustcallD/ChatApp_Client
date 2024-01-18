@@ -11,7 +11,7 @@ const Login = () => {
   const handleLogin = async () => {
     try {
       const response = await axios.post(
-        `${import.meta.env.VITE_SERVER_URL}/register`,
+        `https://chatappbackendservice-w8ct.onrender.com/register`,
         {
           email,
         }
