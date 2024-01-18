@@ -47,6 +47,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
+
 
 const ChatList = () => {
   const [conversations, setConversations] = useState([]);
@@ -122,6 +124,7 @@ const ChatList = () => {
 
   return (
     <div style={containerStyle}>
+      <Navbar />
       <h2 style={headingStyle}>Chat List</h2>
       {error && <div style={errorStyle}>{error}</div>}
       <ul style={listStyle}>

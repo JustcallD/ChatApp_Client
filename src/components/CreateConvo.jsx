@@ -49,6 +49,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import Navbar from "./Navbar";
 
 const CreateConvo = () => {
   const [email, setEmail] = useState("");
@@ -125,7 +126,7 @@ const CreateConvo = () => {
 
   return (
     <div style={containerStyle}>
-      <h2 style={headingStyle}>Add Friend</h2>
+      <Navbar />;<h2 style={headingStyle}>Add Friend</h2>
       <div style={inputContainerStyle}>
         <label style={labelStyle}>Email:</label>
         <input
