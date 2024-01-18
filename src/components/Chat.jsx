@@ -275,7 +275,16 @@ const Chat = () => {
     border: "none",
     cursor: "pointer",
   };
- 
+  const errorStyle = {
+    color: "red",
+    marginTop: "10px",
+    textAlign: "center",
+    padding: "10px",
+    borderRadius: "5px",
+    backgroundColor: "#f8d7da", // Light red background color
+    border: "1px solid #f5c6cb", // Border color for better visibility
+  };
+
   return (
     <div>
       <Navbar />
@@ -294,7 +303,7 @@ const Chat = () => {
             Send
           </button>
         </div>
-        {error && <div style={{ color: "red" }}>{error}</div>}
+        {error && <div style={errorStyle}>{error}</div>}
       </div>
     </div>
   );
