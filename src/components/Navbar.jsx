@@ -22,6 +22,9 @@ const Navbar = () => {
       <Link to="/list" style={linkStyle}>
         Chat List
       </Link>
+      <Link to="/addfriend" style={linkStyle}>
+        add friend
+      </Link>
     </nav>
   );
 };
