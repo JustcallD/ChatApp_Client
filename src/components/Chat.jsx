@@ -217,7 +217,9 @@ const Chat = () => {
         setMessages(response.data.messages);
       } catch (error) {
         console.error("Error fetching conversations:", error);
-        setError("Error fetching conversations. Please try again.");
+        setError(
+          "Error fetching conversations. Please try again or send message to create conversation."
+        );
       }
     };
 
