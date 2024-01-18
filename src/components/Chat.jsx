@@ -275,7 +275,7 @@ const Chat = () => {
     border: "none",
     cursor: "pointer",
   };
-
+ 
   return (
     <div>
       <Navbar />

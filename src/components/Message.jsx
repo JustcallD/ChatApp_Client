@@ -40,7 +40,7 @@ const MessageContainer = ({ messages }) => {
         <div
           key={index}
           className={`message ${
-            message.sender || message.from === id ? "sent" : "received"
+            (message.sender || message.from) === id ? "sent" : "received"
           }`}
         >
           {message.text}
